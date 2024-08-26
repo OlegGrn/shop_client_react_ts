@@ -13,3 +13,17 @@ Store на Mobx, Http запросы через Axios, авторизация п
 
 Взаимодействуют с ними только файлы ...Store.ts из папки src/store. Сами компоненты уже взаимодействуют со своими ..Store.ts.
 Переменные компонентов фронтенда находятся в src/utils/consts.ts
+
+# Ссылка на скачивание репозитария:
+https://github.com/OlegGrn/shop_client_react_ts.git
+
+Из любого терминала командной строки, находясь в скаченной паке, для установки приложения вводим команду
+### `npm instal`
+И для запуска приложения
+### `npm start`
+
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
