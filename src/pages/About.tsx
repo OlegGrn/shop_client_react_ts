@@ -24,9 +24,9 @@ const About = () => {
 
                 <GridLink>
                     <p>Клиент:</p>
-                    <MyCopyField value={"https://github.com/OlegGrn/shop_081123_ts_client.git"}/>
+                    <MyCopyField value={"https://github.com/OlegGrn/shop_client_react_ts.git"}/>
                     <p>Сервер:</p>
-                    <MyCopyField value={"https://github.com/OlegGrn/shop_081123_ts_client.git"}/>
+                    <MyCopyField value={"https://github.com/OlegGrn/shop_server_express.git"}/>
                 </GridLink>
                 <GridLink>
                     <p>Из любого терминала командной строки, находясь в скаченных паках, вводим
