@@ -61,7 +61,7 @@ const BlockDelete: FC<IBlockDelete> = observer((
                 heightScroll={heightScroll}
                 list={list}
                 thLabel={[label]}/>
-            <MyFormButton  >Удалить</MyFormButton>
+            <MyFormButton>Удалить</MyFormButton>
         </form>
     );
 });

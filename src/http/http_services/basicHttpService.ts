@@ -23,8 +23,13 @@ export default class BasicHttpService {
         return await $api.post<IMessage>(path, {name})
     }
 
-    static async deleteFormData(formData: FormData, path: string) {
-        return await $api.post<IMessage>(path, formData)
+    static async delete(path: string, formData: FormData){
+        return await $api.delete(path, {
+            method: "delete",
+            data: {
+                id: formData.get("id")
+            }
+        })
     }
 
     static async getAll(path: string) {

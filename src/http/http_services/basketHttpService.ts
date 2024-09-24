@@ -16,11 +16,14 @@ export interface IUpdateOrder{
     id_order: number
 }
 
+export interface IDelBasket{
+
+}
+
 
 export default class BasketHttpService {
 
    static async deleteData(body: any){
-       console.log("body = " + body)
         return await $api.post<IMessage>("basket/del", body)
 
     }

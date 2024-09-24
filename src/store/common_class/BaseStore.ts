@@ -109,8 +109,14 @@ export default class BaseStore extends LoadingClassStore {
     async deleteData(formData: FormData): Promise<IMesStatus> {
         try {
             this.setLoading(true)
+
+           // const response = await BasicHttpService
+           //     .deleteFormData(formData, this.path_deleteOne)
+
             const response = await BasicHttpService
-                .deleteFormData(formData, this.path_deleteOne)
+                .delete(this.path_deleteOne, formData)
+
+
 
             // обновляем список
             await this.getAllData()

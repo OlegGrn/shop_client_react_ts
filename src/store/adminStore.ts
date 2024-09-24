@@ -27,7 +27,7 @@ export default class AdminStore extends BaseStore {
 }
 
 export const admins = new AdminStore({
-    path_addOne: 'user/admin/add',
-    path_deleteOne: 'user/admin/del',
+    path_addOne: 'user/admin/',
+    path_deleteOne: 'user/admin/',
     path_getAll: 'user/admin/',
 })
