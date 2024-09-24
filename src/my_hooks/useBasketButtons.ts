@@ -8,7 +8,8 @@ export default function useBasketButtons(baskets: BasketStore){
 
     function clickDel(id_row: number, id_user: number) {
         setIsDeleting(true)
-        baskets.deleteData({id: id_row})
+
+        baskets.delete(id_row)
             .finally(() => {
                 baskets
                     .getDataUser(id_user)

@@ -49,9 +49,9 @@ export default class BasketStore extends LoadingClassStore {
         }
     }
 
-    async deleteData(body: any): Promise<string> {
+    async delete(id_row: number): Promise<string> {
         try {
-            let response = await BasketHttpService.deleteData(body)
+            let response = await BasketHttpService.delete(id_row)
             return response.data.message
         } catch (err:any){
             console.log(err)
@@ -59,6 +59,7 @@ export default class BasketStore extends LoadingClassStore {
         }
 
     }
+
 
     async getDataUser(id_user: number): Promise<string | undefined>{
         try {
@@ -76,10 +77,10 @@ export default class BasketStore extends LoadingClassStore {
 
     async updateOrder(quantity: number, id_order: number){
         try{
-
             let response = await BasketHttpService.updateOrder({
                 quantity, id_order
             })
+
             //если все прошло успешно status == 201, иначе status 200 или другие
             if(response.status === 201){
                 //Обновляем данные заказа в storeBasket (т.е. не делаем запрос на сервер для обновления и
